@@ -19,10 +19,6 @@ class Index extends React.Component{
                             <li>
                                 <a href={`/pokemon/${p.id}`}>{p.name.charAt(0).toUpperCase()+p.name.slice(1).toLowerCase()}</a>
                                 <br></br>
-                                <form action={`/pokemon/${p.id}?_method=DELETE`} method='POST'>
-                                    <button type='submit'>Delete</button>
-                                </form>
-                                <a href={`/pokemon/${p.id}/edit`}>Edit Pokemon</a>
                             </li>
                         
                             );
